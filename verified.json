@@ -1,0 +1,546 @@
+{
+  "generatedAt": "2026-11-19T15:57:33.921Z",
+  "blockNumber": 134531180,
+  "chainId": 56,
+  "method": "READ-ONLY via RPC BSC mainnet (eth_getCode + eth_call). Tanpa transaksi, tanpa gas. Yang diverifikasi on-chain per run: keberadaan bytecode kontrak, name/symbol, totalSupply/maxSupply bila tersedia, dan respons getter harga umum. Status buka/tutup/terhenti dan catatan harga adalah KURASI dari riwayat verifikasi Muse Okt-Nov 2026 (lihat statusBasis/priceNote per entri), bukan hasil cek on-chain run ini.",
+  "disclaimer": "Verifikasi = fakta on-chain pada waktu cek. Bukan nasihat finansial. Selalu DYOR — kondisi mint bisa berubah sewaktu-waktu.",
+  "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+  "mints": [
+    {
+      "name": "PXIO NFT",
+      "contract": "0x58e8f1b34B60687B36Bcdc78e02a2fd443De71Ab",
+      "chainId": 56,
+      "standard": "ERC-721",
+      "infoUri": "https://pxio.fun",
+      "status": "limited",
+      "statusBasis": "Free mint 1 NFT pertama per wallet + Agent ID berhasil 17 Nov 2026 (token #5282, tier Laborer). Mint ke-2 dst berbayar. Reward $PXIO ditambang 10/jam, cap storage 150.",
+      "priceNote": "Mint pertama: 0 BNB (gas saja). Mint berikutnya berbayar.",
+      "notes": "Mining aktif setelah mint + start(). Jalur jual $PXIO belum terverifikasi; hasil klaim ditumpuk.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "name": "PXIO Miners",
+        "symbol": "PXIOM",
+        "totalSupply": "16666"
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (17033 byte)."
+        },
+        {
+          "check": "name",
+          "ok": true,
+          "detail": "name() = \"PXIO Miners\""
+        },
+        {
+          "check": "symbol",
+          "ok": true,
+          "detail": "symbol() = \"PXIOM\""
+        },
+        {
+          "check": "totalSupply",
+          "ok": true,
+          "detail": "totalSupply() = 16666 (blok 134531180)."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "ContextGraph",
+      "contract": "0x08b1323a74530bedd2188b458ebcc856315d8e0f",
+      "chainId": 56,
+      "standard": "ERC-721",
+      "infoUri": "https://contextgraph.art",
+      "status": "open",
+      "statusBasis": "Free mint terverifikasi on-chain 17 Nov 2026 (priceFor 0, simulasi mintFree OK). Node #297 berhasil di-mint. Graph 2 membuka jatah gratis baru.",
+      "priceNote": "Mint gratis (0 BNB, gas saja). Klaim token $CTX berbayar dan ditunda karena token belum punya pool.",
+      "notes": "Token $CTX belum punya pool likuiditas; NFT belum ada marketplace. Klaim CTX (60.000/node bila Networked) berbayar 0,000277 BNB + gas.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "name": "Contextgraph Nodes",
+        "symbol": "NODE"
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (9615 byte)."
+        },
+        {
+          "check": "name",
+          "ok": true,
+          "detail": "name() = \"Contextgraph Nodes\""
+        },
+        {
+          "check": "symbol",
+          "ok": true,
+          "detail": "symbol() = \"NODE\""
+        },
+        {
+          "check": "totalSupply",
+          "ok": null,
+          "detail": "totalSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "Insert1UP",
+      "contract": "0xA74081fd9bc9623A2d9321223C35b41016A7fd65",
+      "chainId": 56,
+      "standard": "ERC-721",
+      "infoUri": "https://insert1up.fun",
+      "status": "open",
+      "statusBasis": "Mining gratis 1 kart (NFT + 1.000 $1UP) per wallet + Agent ID berhasil 17 Nov 2026 (kart #1492, PoW loop ~36 menit).",
+      "priceNote": "Mine gratis (gas saja). Pembelian kart tambahan 0,002 BNB tidak disentuh.",
+      "notes": "Pool $1UP saat cek likuiditasnya nol (L=0) — hadiah $1UP belum bernilai. Jatah gratis per wallet habis setelah 1 kart.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "name": "HI-SCORE",
+        "symbol": "HISCORE",
+        "totalSupply": "1639",
+        "priceProbe": [
+          "price() = 2000000000000000 (wei mentah)"
+        ]
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (13760 byte)."
+        },
+        {
+          "check": "name",
+          "ok": true,
+          "detail": "name() = \"HI-SCORE\""
+        },
+        {
+          "check": "symbol",
+          "ok": true,
+          "detail": "symbol() = \"HISCORE\""
+        },
+        {
+          "check": "totalSupply",
+          "ok": true,
+          "detail": "totalSupply() = 1639 (blok 134531180)."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": true,
+          "detail": "Getter harga merespons: price() = 2000000000000000 (wei mentah). Nilai mentah ini DICATAT apa adanya — artinya (harga mint? biaya lain?) TIDAK diverifikasi dalam run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "DIGG Ore",
+      "contract": "0xB6407991b76E712d15EdEF06e125abcC730364F7",
+      "chainId": 56,
+      "standard": "ERC-1155",
+      "infoUri": "",
+      "status": "open",
+      "statusBasis": "Free mint Ore berhasil 31 Okt 2026 (1x Ore tier 1 = STONE). Phase 2 (mining $DIGG + klaim) baru buka setelah 47.500 Ore publik habis; per 19 Nov 2026 tercatat 7.113/47.500 (~15%).",
+      "priceNote": "Mint pertama gratis. Mint berikutnya berbayar (tidak diambil).",
+      "notes": "Forge Miner butuh 5 Ore sejenis. Ore tidak di-stake. Phase 2 masih tutup.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "maxSupply": "50000"
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (19977 byte)."
+        },
+        {
+          "check": "name",
+          "ok": null,
+          "detail": "name() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "symbol",
+          "ok": null,
+          "detail": "symbol() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "totalSupply",
+          "ok": null,
+          "detail": "Dilewati — standar ERC-1155 tidak punya totalSupply() tanpa argumen."
+        },
+        {
+          "check": "maxSupply",
+          "ok": true,
+          "detail": "maxSupply() = 50000."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "NIB Collection V2",
+      "contract": "0xdA35ed11057Cd85Eb338a637f5509080F617a810",
+      "chainId": 56,
+      "standard": "ERC-721",
+      "infoUri": "",
+      "status": "unverified",
+      "statusBasis": "Free mint x3 berhasil 1 Nov 2026 (NIB #4419, #4420, #4421). Status jendela mint saat ini TIDAK diverifikasi ulang — jangan anggap masih buka.",
+      "priceNote": "Mint gratis saat klaim (Nov 2026). Mint berbayar tidak diambil.",
+      "notes": "Tiap NIB = 5x multiplier TAP di game TapTap. Token proyek masih TBA. Pasar Element tidak terbaca sejak 12 Nov 2026.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "name": "Nib Collection",
+        "symbol": "NIB",
+        "totalSupply": "8826",
+        "priceProbe": [
+          "mintPrice() = 50000000000000000 (wei mentah)"
+        ]
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (13117 byte)."
+        },
+        {
+          "check": "name",
+          "ok": true,
+          "detail": "name() = \"Nib Collection\""
+        },
+        {
+          "check": "symbol",
+          "ok": true,
+          "detail": "symbol() = \"NIB\""
+        },
+        {
+          "check": "totalSupply",
+          "ok": true,
+          "detail": "totalSupply() = 8826 (blok 134531180)."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": true,
+          "detail": "Getter harga merespons: mintPrice() = 50000000000000000 (wei mentah). Nilai mentah ini DICATAT apa adanya — artinya (harga mint? biaya lain?) TIDAK diverifikasi dalam run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "UNSOLVABLE",
+      "contract": "0x9e95Da84f1bcc8E5570DAAc99A37EB3f95270904",
+      "chainId": 56,
+      "standard": "ERC-721",
+      "infoUri": "https://unsolvable.art",
+      "status": "stalled",
+      "statusBasis": "Situs menampilkan 'reconstructed service' per recon 16 Nov 2026; totalSupply BEKU di 401, tidak ada jendela mint berjalan. Eligible tapi tidak ada jendela untuk dicoba.",
+      "priceNote": "Harga mint 0 BNB (gas saja) saat layanan jalan. Puzzle + lotre 30% di jendela 15 menit.",
+      "notes": "Supply total 3.333, 1 per Agent ID. Pulih otomatis bila backend kembali — pantau, jangan paksa.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "name": "UNSOLVABLE",
+        "symbol": "UNSOLVABLE",
+        "totalSupply": "401"
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (9981 byte)."
+        },
+        {
+          "check": "name",
+          "ok": true,
+          "detail": "name() = \"UNSOLVABLE\""
+        },
+        {
+          "check": "symbol",
+          "ok": true,
+          "detail": "symbol() = \"UNSOLVABLE\""
+        },
+        {
+          "check": "totalSupply",
+          "ok": true,
+          "detail": "totalSupply() = 401 (blok 134531180)."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "VIRTUAL (aivirtual.fun)",
+      "contract": "0x40f76C030adbE33CD32A061Bf6fA146065cBEa3e",
+      "chainId": 56,
+      "standard": "sale-contract",
+      "infoUri": "https://aivirtual.fun",
+      "status": "limited",
+      "statusBasis": "Free claim berhasil 9 Nov 2026: +200.000 VIRTUAL (1 share gratis per Agent ID). Token TERKUNCI sampai total 4.000 share terjual; deadline 30 Nov 2026 15:41 WIB — target gagal = risiko terkunci permanen.",
+      "priceNote": "Klaim 1 share gratis per Agent ID. Share tambahan berbayar.",
+      "notes": "Kontrak ini adalah sale contract, bukan token NFT. Pool dipantau harian.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {},
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (12673 byte)."
+        },
+        {
+          "check": "name",
+          "ok": null,
+          "detail": "name() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "symbol",
+          "ok": null,
+          "detail": "symbol() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "totalSupply",
+          "ok": null,
+          "detail": "Dilewati — standar sale-contract tidak punya totalSupply() tanpa argumen."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "AIBOME",
+      "contract": "0x50cdd91b31ced977d2776825bbad72e99ff0830e",
+      "chainId": 56,
+      "standard": "ERC-20",
+      "infoUri": "https://aibome.fun",
+      "status": "closed",
+      "statusBasis": "Mint SUDAH BUKA tapi freeMint revert InvalidReferral() — jalur gratis adalah skema referral yang butuh freeCredits (saldo 0); klaim gratis tidak mungkin tanpa mint berbayar dulu. Jalur gratis dinyatakan TERTUTUP untuk hunter tanpa referrer.",
+      "priceNote": "Mint berbayar 0,004 BNB/lot (1 lot = 49.019,6078 BOME) — TIDAK disentuh.",
+      "notes": "Belum ada pasar terbukti. Pantauan tetap jalan sampai 10 Des 2026 untuk perubahan kondisi kontrak.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "name": "BOME",
+        "symbol": "BOME",
+        "totalSupply": "999999999999999999999984000",
+        "maxSupply": "999999999999999999999984000"
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (23775 byte)."
+        },
+        {
+          "check": "name",
+          "ok": true,
+          "detail": "name() = \"BOME\""
+        },
+        {
+          "check": "symbol",
+          "ok": true,
+          "detail": "symbol() = \"BOME\""
+        },
+        {
+          "check": "totalSupply",
+          "ok": true,
+          "detail": "totalSupply() = 999999999999999999999984000 (blok 134531180)."
+        },
+        {
+          "check": "maxSupply",
+          "ok": true,
+          "detail": "maxSupply() = 999999999999999999999984000."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "DIGITAL BOMB (BOMB)",
+      "contract": "0xbE2d0Bc70A3e577C6a1da15e0570D1E67eeBfF55",
+      "chainId": 56,
+      "standard": "ERC-20",
+      "infoUri": "https://db.bomb.here.now",
+      "status": "limited",
+      "statusBasis": "Klaim gratis berhasil 4 Nov 2026: +25.000.000 BOMB. Jatah gratis per wallet HABIS; sisa kuota hanya berbayar (0,002 BNB/share). Pasar NOL saat klaim.",
+      "priceNote": "Klaim gratis 1x. Share tambahan 0,002 BNB/share — ditolak, jangan dibeli.",
+      "notes": "Tiket spekulatif. Pantau listing; penjualan butuh keputusan pemilik.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {
+        "name": "Digital Bomb",
+        "symbol": "BOMB",
+        "totalSupply": "31300000000000000000000000000"
+      },
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (4158 byte)."
+        },
+        {
+          "check": "name",
+          "ok": true,
+          "detail": "name() = \"Digital Bomb\""
+        },
+        {
+          "check": "symbol",
+          "ok": true,
+          "detail": "symbol() = \"BOMB\""
+        },
+        {
+          "check": "totalSupply",
+          "ok": true,
+          "detail": "totalSupply() = 31300000000000000000000000000 (blok 134531180)."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    },
+    {
+      "name": "Hash21 Pool",
+      "contract": "0x6884D40B10c55A6c2faB2D3c829d41c3C798279D",
+      "chainId": 56,
+      "standard": "pool-contract",
+      "infoUri": "",
+      "status": "open",
+      "statusBasis": "Registrasi miner GRATIS berhasil 30 Okt 2026 (hashOf = 1 H aktif, pendingOf mengalir). Aktivasi berbayar 4 USDT dan beli miner pakai HASH tidak diambil.",
+      "priceNote": "Registrasi gratis. claim() bergas — dibiarkan menumpuk sampai untung bersih setelah biaya.",
+      "notes": "Token HASH belum punya pasar yang menguntungkan saat cek terakhir. Klaim hanya bila untung setelah claim + swap + gas.",
+      "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs.",
+      "checkedAt": "2026-11-19T15:57:33.921Z",
+      "blockNumber": 134531180,
+      "rpc": "https://bsc-dataseed.binance.org",
+      "facts": {},
+      "checks": [
+        {
+          "check": "contract-exists",
+          "ok": true,
+          "detail": "Bytecode ditemukan (9180 byte)."
+        },
+        {
+          "check": "name",
+          "ok": null,
+          "detail": "name() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "symbol",
+          "ok": null,
+          "detail": "symbol() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "totalSupply",
+          "ok": null,
+          "detail": "Dilewati — standar pool-contract tidak punya totalSupply() tanpa argumen."
+        },
+        {
+          "check": "maxSupply",
+          "ok": null,
+          "detail": "maxSupply() gagal/revert — tidak tersedia di kontrak ini."
+        },
+        {
+          "check": "price-probe",
+          "ok": null,
+          "detail": "Tidak ada getter harga standar (price/mintPrice/cost/publicPrice) yang merespons. Harga mengacu pada catatan kurasi (priceNote) — BUKAN hasil cek on-chain run ini."
+        }
+      ],
+      "verified": true,
+      "verificationSummary": "Kontrak terkonfirmasi ada di BSC mainnet pada blok cek; detail per cek lihat 'checks'. Status buka/tutup adalah kurasi dari riwayat verifikasi Muse (lihat statusBasis), bukan hasil cek on-chain run ini."
+    }
+  ]
+}
