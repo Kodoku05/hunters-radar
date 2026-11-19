@@ -1,0 +1,117 @@
+{
+    "note": "Seed data Hunter's Radar. Status di sini adalah catatan kurasi dari riwayat verifikasi on-chain Muse (Okt-Nov 2026) + hasil cek ulang verifier (lihat verified.json). JANGAN mengklaim status yang tidak ada dasarnya \u2014 tiap entri menyebut basis statusnya.",
+    "seeds": [
+        {
+            "chainId": 56,
+            "contract": "0x58e8f1b34B60687B36Bcdc78e02a2fd443De71Ab",
+            "infoUri": "https://pxio.fun",
+            "name": "PXIO NFT",
+            "notes": "Mining aktif setelah mint + start(). Jalur jual $PXIO belum terverifikasi; hasil klaim ditumpuk.",
+            "priceNote": "Mint pertama: 0 BNB (gas saja). Mint berikutnya berbayar.",
+            "standard": "ERC-721",
+            "status": "limited",
+            "statusBasis": "Free mint 1 NFT pertama per wallet + Agent ID berhasil 17 Nov 2026 (token #5282, tier Laborer). Mint ke-2 dst berbayar. Reward $PXIO ditambang 10/jam, cap storage 150."
+        },
+        {
+            "chainId": 56,
+            "contract": "0x08b1323a74530bedd2188b458ebcc856315d8e0f",
+            "infoUri": "https://contextgraph.art",
+            "name": "ContextGraph",
+            "notes": "Token $CTX belum punya pool likuiditas; NFT belum ada marketplace. Klaim CTX (60.000/node bila Networked) berbayar 0,000277 BNB + gas.",
+            "priceNote": "Mint gratis (0 BNB, gas saja). Klaim token $CTX berbayar dan ditunda karena token belum punya pool.",
+            "standard": "ERC-721",
+            "status": "open",
+            "statusBasis": "Free mint terverifikasi on-chain 17 Nov 2026 (priceFor 0, simulasi mintFree OK). Node #297 berhasil di-mint. Graph 2 membuka jatah gratis baru."
+        },
+        {
+            "chainId": 56,
+            "contract": "0xA74081fd9bc9623A2d9321223C35b41016A7fd65",
+            "infoUri": "https://insert1up.fun",
+            "name": "Insert1UP",
+            "notes": "Pool $1UP saat cek likuiditasnya nol (L=0) \u2014 hadiah $1UP belum bernilai. Jatah gratis per wallet habis setelah 1 kart.",
+            "priceNote": "Mine gratis (gas saja). Pembelian kart tambahan 0,002 BNB tidak disentuh.",
+            "standard": "ERC-721",
+            "status": "open",
+            "statusBasis": "Mining gratis 1 kart (NFT + 1.000 $1UP) per wallet + Agent ID berhasil 17 Nov 2026 (kart #1492, PoW loop ~36 menit)."
+        },
+        {
+            "chainId": 56,
+            "contract": "0xB6407991b76E712d15EdEF06e125abcC730364F7",
+            "infoUri": "",
+            "name": "DIGG Ore",
+            "notes": "Forge Miner butuh 5 Ore sejenis. Ore tidak di-stake. Phase 2 masih tutup.",
+            "priceNote": "Mint pertama gratis. Mint berikutnya berbayar (tidak diambil).",
+            "standard": "ERC-1155",
+            "status": "open",
+            "statusBasis": "Free mint Ore berhasil 31 Okt 2026 (1x Ore tier 1 = STONE). Phase 2 (mining $DIGG + klaim) baru buka setelah 47.500 Ore publik habis; per 19 Nov 2026 tercatat 7.113/47.500 (~15%)."
+        },
+        {
+            "chainId": 56,
+            "contract": "0xdA35ed11057Cd85Eb338a637f5509080F617a810",
+            "infoUri": "",
+            "name": "NIB Collection V2",
+            "notes": "Tiap NIB = 5x multiplier TAP di game TapTap. Token proyek masih TBA. Pasar Element tidak terbaca sejak 12 Nov 2026.",
+            "priceNote": "Mint gratis saat klaim (Nov 2026). Mint berbayar tidak diambil.",
+            "standard": "ERC-721",
+            "status": "unverified",
+            "statusBasis": "Free mint x3 berhasil 1 Nov 2026 (NIB #4419, #4420, #4421). Status jendela mint saat ini TIDAK diverifikasi ulang \u2014 jangan anggap masih buka."
+        },
+        {
+            "chainId": 56,
+            "contract": "0x9e95Da84f1bcc8E5570DAAc99A37EB3f95270904",
+            "infoUri": "https://unsolvable.art",
+            "name": "UNSOLVABLE",
+            "notes": "Supply total 3.333, 1 per Agent ID. Pulih otomatis bila backend kembali \u2014 pantau, jangan paksa.",
+            "priceNote": "Harga mint 0 BNB (gas saja) saat layanan jalan. Puzzle + lotre 30% di jendela 15 menit.",
+            "standard": "ERC-721",
+            "status": "stalled",
+            "statusBasis": "Situs menampilkan 'reconstructed service' per recon 16 Nov 2026; totalSupply BEKU di 401, tidak ada jendela mint berjalan. Eligible tapi tidak ada jendela untuk dicoba."
+        },
+        {
+            "chainId": 56,
+            "contract": "0x40f76C030adbE33CD32A061Bf6fA146065cBEa3e",
+            "infoUri": "https://aivirtual.fun",
+            "name": "VIRTUAL (aivirtual.fun)",
+            "notes": "Kontrak ini adalah sale contract, bukan token NFT. Pool dipantau harian.",
+            "priceNote": "Klaim 1 share gratis per Agent ID. Share tambahan berbayar.",
+            "standard": "sale-contract",
+            "status": "limited",
+            "statusBasis": "Free claim berhasil 9 Nov 2026: +200.000 VIRTUAL (1 share gratis per Agent ID). Token TERKUNCI sampai total 4.000 share terjual; deadline 30 Nov 2026 15:41 WIB \u2014 target gagal = risiko terkunci permanen."
+        },
+        {
+            "chainId": 56,
+            "contract": "0x50cdd91b31ced977d2776825bbad72e99ff0830e",
+            "infoUri": "https://aibome.fun",
+            "name": "AIBOME",
+            "notes": "Belum ada pasar terbukti. Pantauan tetap jalan sampai 10 Des 2026 untuk perubahan kondisi kontrak.",
+            "priceNote": "Mint berbayar 0,004 BNB/lot (1 lot = 49.019,6078 BOME) \u2014 TIDAK disentuh.",
+            "standard": "ERC-20",
+            "status": "closed",
+            "statusBasis": "Mint SUDAH BUKA tapi freeMint revert InvalidReferral() \u2014 jalur gratis adalah skema referral yang butuh freeCredits (saldo 0); klaim gratis tidak mungkin tanpa mint berbayar dulu. Jalur gratis dinyatakan TERTUTUP untuk hunter tanpa referrer."
+        },
+        {
+            "chainId": 56,
+            "contract": "0xbE2d0Bc70A3e577C6a1da15e0570D1E67eeBfF55",
+            "infoUri": "https://db.bomb.here.now",
+            "name": "DIGITAL BOMB (BOMB)",
+            "notes": "Tiket spekulatif. Pantau listing; penjualan butuh keputusan pemilik.",
+            "priceNote": "Klaim gratis 1x. Share tambahan 0,002 BNB/share \u2014 ditolak, jangan dibeli.",
+            "standard": "ERC-20",
+            "status": "limited",
+            "statusBasis": "Klaim gratis berhasil 4 Nov 2026: +25.000.000 BOMB. Jatah gratis per wallet HABIS; sisa kuota hanya berbayar (0,002 BNB/share). Pasar NOL saat klaim."
+        },
+        {
+            "chainId": 56,
+            "contract": "0x6884D40B10c55A6c2faB2D3c829d41c3C798279D",
+            "infoUri": "",
+            "name": "Hash21 Pool",
+            "notes": "Token HASH belum punya pasar yang menguntungkan saat cek terakhir. Klaim hanya bila untung setelah claim + swap + gas.",
+            "priceNote": "Registrasi gratis. claim() bergas \u2014 dibiarkan menumpuk sampai untung bersih setelah biaya.",
+            "standard": "pool-contract",
+            "standardNote": "Kontrak pool mining, bukan NFT. Token HASH: 0x6a87DE92deb752c6162CF80Bd16E3eFd4BDc6D90.",
+            "status": "open",
+            "statusBasis": "Registrasi miner GRATIS berhasil 30 Okt 2026 (hashOf = 1 H aktif, pendingOf mengalir). Aktivasi berbayar 4 USDT dan beli miner pakai HASH tidak diambil."
+        }
+    ],
+    "source": "Diverifikasi on-chain oleh Muse, Okt-Nov 2026; cek ulang otomatis via verifier/check.mjs."
+}

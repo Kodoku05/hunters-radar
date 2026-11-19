@@ -27,3 +27,6 @@ keystore/
 mnemonic*
 *secret*
 broadcast/
+node_modules/
+dist/
+*.tsbuildinfo
