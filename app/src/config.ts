@@ -1,11 +1,20 @@
 // Hunter's Radar — konfigurasi dApp.
 //
 // ============================================================
-// TODO (koordinator): isi REGISTRY_ADDRESS dengan alamat kontrak
-// HuntersRadar testnet begitu builder kontrak selesai deploy,
-// lalu rebuild (`npm run build`). Sampai saat itu dApp berjalan
-// dalam mode "seed-only": feed menampilkan data terverifikasi
-// (verified.json) dan form submit / vote nonaktif.
+// STATUS 19 Nov 2026 (Tahap 1): kontrak registry SUDAH lolos uji
+// lengkap secara lokal (23 tes Foundry + E2E Anvil 15/15 PASS —
+// lihat docs/e2e-local-2026-11-19.log). Deploy ke BSC TESTNET
+// LIVE tertunda: faucet testnet mensyaratkan alamat deployer
+// punya >=0,002 BNB di BSC Mainnet, dan syarat itu tidak bisa
+// dipenuhi (total BNB tim di bawah ambang itu). Jalur faucet
+// DITUTUP — jangan coba klaim lagi.
+//
+// REGISTRY_ADDRESS dibiarkan 0x0 dengan SENGAJA sampai deploy
+// MAINNET 25–26 Nov 2026 (butuh re-pairing BAW). Jangan isi
+// alamat palsu / alamat Anvil lokal: dApp berjalan dalam mode
+// "seed-only" — feed menampilkan data terverifikasi
+// (verified.json) dan form submit / vote nonaktif sampai
+// registry mainnet benar-benar tayang.
 // ============================================================
 export const REGISTRY_ADDRESS = "0x0000000000000000000000000000000000000000";
 

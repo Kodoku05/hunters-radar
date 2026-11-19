@@ -414,7 +414,7 @@ export default function App() {
   };
 
   const submitDisabledReason: string | null = !REGISTRY_CONFIGURED
-    ? "Registry testnet belum di-deploy — submit aktif begitu alamat kontrak diisi."
+    ? "Interaksi on-chain belum aktif: testnet live tertunda (faucet), deploy mainnet 25–26 Nov 2026."
     : !account
       ? "Hubungkan wallet dulu."
       : wrongChain
@@ -466,9 +466,12 @@ export default function App() {
 
       {!REGISTRY_CONFIGURED && (
         <div className="alert info">
-          <strong>Mode seed-only.</strong> Kontrak registry testnet belum di-deploy — feed di
-          bawah menampilkan data seed terverifikasi (10 mint). Submit &amp; vote aktif begitu
-          alamat registry diisi.
+          <strong>Mode seed-only — interaksi on-chain belum aktif.</strong> Kontrak registry
+          sudah lolos uji lokal lengkap (23 tes + E2E 15/15), tetapi deploy ke testnet live
+          tertunda: faucet BSC testnet mensyaratkan saldo mainnet yang tidak kami miliki.
+          Deploy mainnet dijadwalkan <strong>25–26 Nov 2026</strong> — submit &amp; vote aktif
+          begitu kontrak mainnet tayang. Feed di bawah menampilkan data seed terverifikasi
+          (10 mint).
         </div>
       )}
       {REGISTRY_CONFIGURED && registryError && <div className="alert error">{registryError}</div>}
@@ -715,7 +718,7 @@ export default function App() {
                   <code>{shortAddr(REGISTRY_ADDRESS)}</code> ↗
                 </a>
               ) : (
-                <span className="muted">belum di-deploy (testnet)</span>
+                <span className="muted">belum di-deploy (testnet live tertunda — mainnet 25–26 Nov)</span>
               )}
             </p>
           </section>
