@@ -9,14 +9,12 @@
 // dipenuhi (total BNB tim di bawah ambang itu). Jalur faucet
 // DITUTUP — jangan coba klaim lagi.
 //
-// REGISTRY_ADDRESS dibiarkan 0x0 dengan SENGAJA sampai deploy
-// MAINNET 25–26 Nov 2026 (butuh re-pairing BAW). Jangan isi
-// alamat palsu / alamat Anvil lokal: dApp berjalan dalam mode
-// "seed-only" — feed menampilkan data terverifikasi
-// (verified.json) dan form submit / vote nonaktif sampai
-// registry mainnet benar-benar tayang.
+// Registry MAINNET tayang 25 Nov 2026 via CREATE2
+// (tx 0x8b3a8ca59c775b30d51bbce1d44ea74db17a7ef3c89967d3499df4ac984c94f1).
+// Owner = wallet BAW Putra; agentId = Agent ID mainnet;
+// mintCount awal 0 — terverifikasi on-chain setelah deploy.
 // ============================================================
-export const REGISTRY_ADDRESS = "0x0000000000000000000000000000000000000000";
+export const REGISTRY_ADDRESS = "0xdcce4c74a37fcb6a826523fd7ef32c1a45187bba";
 
 export const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
 export const REGISTRY_CONFIGURED =
@@ -55,11 +53,10 @@ export const BSC_MAINNET: ChainConfig = {
   explorerTx: (h) => `https://bscscan.com/tx/${h}`,
   explorerAddress: (a) => `https://bscscan.com/address/${a}`,
   currency: "BNB",
-  // NONAKTIF sampai Tahap 2 (deploy mainnet + keputusan koordinator).
-  enabled: false,
+  enabled: true,
 };
 
 // Chain yang dipakai dApp saat ini.
-export const ACTIVE_CHAIN = BSC_TESTNET;
+export const ACTIVE_CHAIN = BSC_MAINNET;
 
 export const VERIFIED_JSON_URL = "./verified.json";
