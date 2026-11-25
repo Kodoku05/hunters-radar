@@ -20,7 +20,7 @@ contract DeployMainnet is Script {
         uint256 deployerKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerKey);
 
-        HuntersRadar radar = new HuntersRadar(AGENT_ID);
+        HuntersRadar radar = new HuntersRadar(AGENT_ID, vm.addr(deployerKey));
         console.log("HuntersRadar (mainnet):", address(radar));
         console.log("Agent ID:", radar.agentId());
         console.log("Owner:", radar.owner());

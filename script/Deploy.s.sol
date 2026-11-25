@@ -22,7 +22,7 @@ contract Deploy is Script {
         MockAgentId mock = new MockAgentId();
         console.log("MockAgentId:", address(mock));
 
-        HuntersRadar radar = new HuntersRadar(address(mock));
+        HuntersRadar radar = new HuntersRadar(address(mock), msg.sender);
         console.log("HuntersRadar:", address(radar));
         console.log("Owner:", radar.owner());
 

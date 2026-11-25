@@ -26,7 +26,7 @@ contract HuntersRadarTest is Test {
 
     function setUp() public {
         agentId = new MockAgentId();
-        radar = new HuntersRadar(address(agentId));
+        radar = new HuntersRadar(address(agentId), address(this));
         agentId.mint(holder1);
         agentId.mint(holder2);
         dummy1 = new DummyMint();

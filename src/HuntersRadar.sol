@@ -57,10 +57,11 @@ contract HuntersRadar {
         _;
     }
 
-    constructor(address _agentId) {
+    constructor(address _agentId, address _owner) {
         require(_agentId != address(0), "agentId zero");
+        require(_owner != address(0), "owner zero");
         agentId = _agentId;
-        owner = msg.sender;
+        owner = _owner;
     }
 
     /// @notice Submit a free mint to the radar. Caller must hold an Agent ID.
